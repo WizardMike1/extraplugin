@@ -18,7 +18,7 @@ from VIPMUSIC.logging import LOGGER
 
 
 @app.on_message(
-    filters.command(["vcuser", "vcusers", "vcmember", "vcmembers"]) & filters.chat_admin
+    filters.command(["vcuser", "vcusers", "vcmember", "vcmembers"]) & filters.admin
 )
 async def vc_members(client, message):
     try:
